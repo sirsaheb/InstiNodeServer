@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>InstiTrack - Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-row>
+      <ion-col>
+        <img src="assets/images/Logo.jpg" />
+      </ion-col>
+    </ion-row>
+   <ion-row>
+      <ion-col>
+        <ion-list > 
+          <ion-item>
+            <ion-label stacked>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="authData.usrName"></ion-input>
+          </ion-item>
+ 
+          <ion-item>
+            <ion-label stacked>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="authData.pwd"></ion-input>
+          </ion-item>
+ 
+        </ion-list>
+      </ion-col>
+    </ion-row>
+ 
+    <ion-row>
+      <ion-col>
+      	<button ion-button color="blue" round icon-left class="login-button" (click)="login()">
+      		<ion-icon name="key" color="bright"></ion-icon> Login
+    	</button>
+        
+      </ion-col>
+    </ion-row>
+ 
+</ion-content>
+
